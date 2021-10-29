@@ -1,0 +1,32 @@
+.footer-container{
+    background-color: aliceblue;
+    /* position: fixed;
+    bottom: 0; */
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact div{
+    margin-left:auto;
+    margin-right: auto;
+}
+.social-media a{
+    margin-left: 30px;
+}
+.social-media img {
+    width: 3%;
+    background-color:lightblue;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width:688px) {
+        .social-media a img{
+                width: 6%;
+        }
+}
