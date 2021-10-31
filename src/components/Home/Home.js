@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Carousel, Col, Row, Spinner } from 'react-bootstrap';
+import { Card, Carousel, Col, Row, Spinner } from 'react-bootstrap';
 import banner1 from '../../image/banner/rsz_goaseabeach.jpg'
 import banner2 from '../../image/banner/rsz_steven-lasry-_25mtanrow4-unsplash.jpg'
 import banner3 from '../../image/banner/topclassResort.jpg'
 import LoadCard from '../LoadCard/LoadCard';
 import './Home.css'
 import HomePackage from './HomePakcage/HomePackage';
+import './Home.css'
 
 const Home = () => {
     const [packages, setPackages]=useState([]);
@@ -63,13 +64,11 @@ const Home = () => {
             {/* banner slider end */}
             <div className="home-packages">
             <Row xs={1} md={2} lg={4} className="g-4">
-                { packages.length===0?totalCard.map(num=><Col
-                key={num}
-                >
-                <LoadCard></LoadCard></Col>)
-                
-                  :
-                    totalCard.map(tourPackage=><Col
+               {packages.length===0?<div className="spinner">
+                <Spinner animation="border" variant="info" />
+               </div>
+                :
+                  totalCard.map(tourPackage=><Col
                     key={tourPackage._id}
                     >
                     <HomePackage
@@ -79,6 +78,65 @@ const Home = () => {
                 }
               </Row>
             </div>
+            <div className="hotels">
+              <h2 className="hed">Recomanded TRANSPORT </h2>
+    <Row xs={1} md={2} lg={3} className="g-4">
+    <Col>
+      <Card>
+        <Card.Img variant="top" src="https://i.ibb.co/GtcX3RG/cars.jpg" />
+        <Card.Body>
+          <Card.Title>Cars</Card.Title>
+        </Card.Body>
+      </Card>
+      </Col>
+      <Col>
+      <Card>
+        <Card.Img variant="top" src="https://i.ibb.co/DLYQWjK/tempo-traveller.jpg" />
+        <Card.Body>
+          <Card.Title>Mini Coach</Card.Title>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col>
+      <Card>
+        <Card.Img variant="top" src="https://i.ibb.co/VHLSZMg/luxury-bus.jpg" />
+        <Card.Body>
+          <Card.Title>Luxury Coach</Card.Title>
+        </Card.Body>
+      </Card>
+    </Col>
+</Row>
+      <div className="resort">
+        <h2 className="hed">Top class hotels and resorts</h2>
+      <Row xs={1} md={2} lg={3} className="g-4">
+    <Col>
+      <Card>
+        <Card.Img variant="top" src="https://i.ibb.co/8m5ZwpD/Luxury-Spa-Resorts-in-Himalayan-Range-300x169.jpg" />
+        <Card.Body>
+          <Card.Title>Top 10 Spa Destinations in the Himalayan Range of India</Card.Title>
+        </Card.Body>
+      </Card>
+      </Col>
+      <Col>
+      <Card>
+        <Card.Img variant="top" src="https://i.ibb.co/wNkX94R/hotels-to-stay-in-sikkim-300x169.png" />
+        <Card.Body>
+          <Card.Title>15 Hotels to Stay in Sikkim by Destinations</Card.Title>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col>
+      <Card>
+        <Card.Img variant="top" src="https://i.ibb.co/gZ3hbR2/Untitled-design-8-1-300x169.png" />
+        <Card.Body>
+          <Card.Title>15 Best Honeymoon Resorts in Shimla</Card.Title>
+        </Card.Body>
+      </Card>
+    </Col>
+</Row>
+
+      </div>
+        </div>
         </div>
     );
 };

@@ -16,7 +16,7 @@ const PlaceBooking = () => {
         .then(data=>setSelectedPackage(data))
     },[])
     console.log(selectedPackage);
-        const {image,packageName,_id,Price,Duration,description}=selectedPackage;
+        const {image,package_name,_id,Price,Duration,description}=selectedPackage;
         // react hoke form 
         const { register, handleSubmit,reset } = useForm();
 
@@ -46,7 +46,7 @@ const PlaceBooking = () => {
         <img src={image} alt="" />
         <div className="info">
            <div className="row">
-           <h3 className="col-8 col-lg-12">{packageName}</h3>
+           <h3 className="col-8 col-lg-12">{package_name}</h3>
            <p className="col-4 col-lg-12">price : {Price}</p>
            <p className=" col-6 col-lg-12">Duration: {Duration}</p>
            <p className="col-12">{description}</p>
