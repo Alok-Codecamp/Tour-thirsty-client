@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
+import './MyBooking.css'
 const MyBooking = () => {
     const [myBooking, setMyBooking]=useState([]);
     const {user}=useAuth();
@@ -15,9 +16,11 @@ const MyBooking = () => {
     return (
         <div>
            {
-               myBooking.length===0?<Spinner animation="border" variant="info" />
+               myBooking.length===0?<div className="spinner">
+                   <Spinner animation="border" variant="info" />
+               </div>
                :
-               filterData.map(data=><div>
+               filterData.map(data=><div className="my-booking">
                    <h2>{data.email}</h2>
                    <h3>{data._id}</h3>
                    </div>
