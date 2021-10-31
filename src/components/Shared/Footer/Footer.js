@@ -15,18 +15,18 @@ const Footer = () => {
                 <div className="email">
                      <div className="info">
                      <h3>Email</h3>   
-                     <p></p>
+                     <p>tourThirsty@gmail.com</p>
                      </div>
                 </div>
                 <div className="call-us">
                     <div className="info">
                         <h3>Call Us</h3>
-                        <p></p>
+                        <p>+902154754</p>
                     </div>
                 </div>
-                <div className="location">
+                <div className="location w-25">
                 <h3>Address</h3>
-                <p></p>
+                <p>Address: Flat No. 6, Shankar Market, 2nd Floor, Above Shop No.1 Shankar Market, Outer Circle, Opposite M Block, Connaught Place, Delhi, 110001, India.</p>
                 </div>
 
             </div>

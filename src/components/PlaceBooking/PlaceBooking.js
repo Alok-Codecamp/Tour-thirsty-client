@@ -60,10 +60,7 @@ const PlaceBooking = () => {
       <input className=" col-12 col-md-12 col-lg-6" {...register("full_name", { required: true})}
       placeholder="full name" />
       <input type="text" className="col-12 col-md-12 col-lg-6"  {...register("mobile")} placeholder="mobile"/>
-      <input type="text" className="col-12 col-md-12 col-lg-6"  {...register("mobile")} value=""/>
-     
       <input className="col-12 col-md-12 col-lg-6" {...register("email",{required:true})} placeholder="email" />
-      
       <input className="col-12 col-md-12 col-lg-6" type="number" {...register("guest")} placeholder="no of guests" />
       <input className="col-12 col-md-12 col-lg-6" type="date" {...register("Check_In_Date")}/>
       <input className="col-12 col-md-1 col-lg-6" type="date" {...register("Check_Out_Date")} />

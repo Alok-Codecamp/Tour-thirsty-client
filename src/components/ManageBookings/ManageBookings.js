@@ -60,7 +60,7 @@ const ManageBookings = () => {
                         <p className="d-sm-none d-lg-block  w-75">{b?.description}</p>
                         </div>
                     </div>
-                    <button onClick={handleAprove}>Aprove</button>
+                    <button className="me-lg-4" onClick={handleAprove}>Aprove</button>
                     <button onClick={()=>handleDelete(b._id)}>Cancel booking</button>
                     </div>
                 </div>)
