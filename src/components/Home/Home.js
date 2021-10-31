@@ -31,8 +31,8 @@ const Home = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Enjoy beach sunset</h3>
+      <p>INDIA HOLIDAY DESTINATIONS10 Places To Enjoy Spectacular Views Of Sunset In Goa</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -43,8 +43,8 @@ const Home = () => {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Shikara ride at Dal Lake.</h3>
+      <p>Cool off in the mesmerising Betaab Valley, enjoy the breeze by the Dal Lake  more. Book holiday packages </p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -55,7 +55,7 @@ const Home = () => {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
+      <h3>hotel deals on Beauty Garden Resort</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
