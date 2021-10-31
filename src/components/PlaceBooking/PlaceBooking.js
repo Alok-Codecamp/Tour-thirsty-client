@@ -11,7 +11,7 @@ const PlaceBooking = () => {
     const today=new Date();
     const {id}=useParams();
     useEffect(()=>{
-        fetch(`http://localhost:5000/packages/${id}`)
+        fetch(`https://peaceful-sierra-90346.herokuapp.com/packages/${id}`)
         .then(res=>res.json())
         .then(data=>setSelectedPackage(data))
     },[])
@@ -25,7 +25,7 @@ const PlaceBooking = () => {
             console.log(data)
             // setBookingInfo(...data,_id);
             
-            fetch('http://localhost:5000/booking',{
+            fetch('https://peaceful-sierra-90346.herokuapp.com/booking',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json'

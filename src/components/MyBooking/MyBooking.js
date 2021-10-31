@@ -4,7 +4,7 @@ const MyBooking = () => {
     const [myBooking, setMyBooking]=useState([]);
     const {user}=useAuth();
     useEffect(()=>{
-        fetch('http://localhost:5000/booking')
+        fetch('https://peaceful-sierra-90346.herokuapp.com/booking')
         .then(res=>res.json())
         .then(data=>setMyBooking(data));
     },[])

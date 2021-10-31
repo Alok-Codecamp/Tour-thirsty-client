@@ -5,7 +5,7 @@ const ManageBookings = () => {
     const [booking,setBooking]=useState([]);
     const {getBooking}=useLocalStore();
     useEffect(()=>{
-        fetch('http://localhost:5000/packages')
+        fetch('https://peaceful-sierra-90346.herokuapp.com/packages')
         .then(res=>res.json())
         .then(data=>setBooking(data));
     },[])
@@ -22,7 +22,7 @@ const ManageBookings = () => {
         // console.log(manageBooking)
         const handleDelete=(id)=>{
             console.log(id)
-            const url=`http://localhost:5000/packages/${id}`;
+            const url=`https://peaceful-sierra-90346.herokuapp.com/packages/${id}`;
             fetch(url,{
                 method:'DELETE'
             })
