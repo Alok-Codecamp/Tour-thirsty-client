@@ -15,7 +15,8 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setPackages(data))
     },[])
-    const totalCard=[1,2,3,4,5,6];
+    const totalCard=[...packages];
+    totalCard.length=8;
     return (
         <div>
             {/* slider banner  */}
@@ -68,7 +69,7 @@ const Home = () => {
                 <LoadCard></LoadCard></Col>)
                 
                   :
-                    packages.map(tourPackage=><Col
+                    totalCard.map(tourPackage=><Col
                     key={tourPackage._id}
                     >
                     <HomePackage
