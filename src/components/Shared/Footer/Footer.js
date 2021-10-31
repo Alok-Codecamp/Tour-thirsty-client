@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer-container">
-            <div className="contact">
+            <div className="contact d-lg-flex d-md-flex justify-content-evently align-items-center">
                 <div className="email">
                      <div className="info">
                      <h3>Email</h3>   

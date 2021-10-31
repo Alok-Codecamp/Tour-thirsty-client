@@ -1,0 +1,27 @@
+.package-container{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.package-container img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info{
+    margin-top: 20px;
+    color: rgb(100, 25, 12);
+}
+
+.info button{
+   
+    border: none;
+    background-color:tomato;
+    padding:5px 16px;
+    border-radius: 5px;
+    color:wheat;
+    font-size: 18px;
+    font-weight: 600;
+
+}

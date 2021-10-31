@@ -12,6 +12,7 @@ import AddPackage from './components/AddPackage/AddPackage';
 import Login from './components/Login/Login';
 import AuthProvider from './context/context';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import PlaceBooking from './components/PlaceBooking/PlaceBooking';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
       <PrivateRoute path="/addpackage">
         <AddPackage></AddPackage>
         </PrivateRoute>
+        <PrivateRoute path="/placebooking/:id">
+              <PlaceBooking></PlaceBooking>
+          </PrivateRoute>
       <Route path="/login">
         <Login></Login>
         </Route>

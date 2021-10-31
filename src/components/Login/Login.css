@@ -1,0 +1,17 @@
+.login{
+    height: 200px;
+    width: 300px;
+    background-color: aliceblue;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.login button{
+    margin:85px 26px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border:2px solid tomato;
+    
+}

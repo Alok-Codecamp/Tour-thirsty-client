@@ -1,0 +1,15 @@
+.rh-form{
+    background-color:aliceblue;
+
+}
+.rh-form form{
+    background-color: tomato;
+    padding:50px;
+}
+.rh-form input{
+    border-radius:5px;
+    border: none;
+}
+.rh-form input:focus{
+    outline:1px solid black;
+}
