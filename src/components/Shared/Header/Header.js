@@ -24,7 +24,9 @@ const Header = () => {
                             <Link to="/home">Home</Link>
                             <Link to="/packages">Packages</Link>
                             <Link to="/mybooking">My Booking</Link>
-                            <Link to="/managebooking">Manage All Booking</Link>
+                           {
+                               user.email&& <Link to="/managebooking">Manage All Booking</Link>
+                           }
                             {
                                 user.email&&<Link to="/addpackage">Add Package</Link>
                             }
