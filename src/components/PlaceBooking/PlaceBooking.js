@@ -16,7 +16,7 @@ const PlaceBooking = () => {
         .then(data=>setSelectedPackage(data))
     },[])
     console.log(selectedPackage);
-        const {package_name,_id}=selectedPackage;
+        const {image,packageName,_id,Price,Duration,description}=selectedPackage;
         // react hoke form 
         const { register, handleSubmit,reset } = useForm();
 
@@ -35,16 +35,24 @@ const PlaceBooking = () => {
            .then(res=>res.json())
            .then(data=>{
                if(data.insertedId){
-                   alert("inserted successfully")
+                   alert("Congradulation ")
                }
            })
            
         }
     return (
         <div className="booking-placed mt-5 mb-5 container d-lg-flex d-md-flex ">
-            <div className="package-info mb-sm-5 me-lg-4">
-            <h2>Place Booking : {package_name} </h2>
-            <h3></h3>
+        <div className="package-container mb-sm-5 me-lg-4">
+        <img src={image} alt="" />
+        <div className="info">
+           <div className="row">
+           <h3 className="col-8 col-lg-12">{packageName}</h3>
+           <p className="col-4 col-lg-12">price : {Price}</p>
+           <p className=" col-6 col-lg-12">Duration: {Duration}</p>
+           <p className="col-12">{description}</p>
+           </div>
+            
+            </div>
             </div>
             <div className="rh-form ms-lg-4  ms-md-5">
            
