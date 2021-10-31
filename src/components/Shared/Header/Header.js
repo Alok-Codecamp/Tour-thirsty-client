@@ -25,7 +25,9 @@ const Header = () => {
                             <Link to="/packages">Packages</Link>
                             <Link to="/mybooking">My Booking</Link>
                             <Link to="/managebooking">Manage All Booking</Link>
-                            <Link to="/addpackage">Add Package</Link>
+                            {
+                                user.email&&<Link to="/addpackage">Add Package</Link>
+                            }
                             {
                                 user.email ?
                                     <button className="btn btn-dark " onClick={LogOut}>Logout</button>

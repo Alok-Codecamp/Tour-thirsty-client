@@ -27,7 +27,7 @@ const AddPackage = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
             <h2>Add Package to database</h2>
       <input {...register("packageName", { required: true, maxLength: 50 })} placeholder="package Name" />
-      <input {...register("route", { required: true, maxLength: 10 })} placeholder="duration" />
+      <input {...register("status", { required: true, maxLength: 10 })} placeholder="status" />
       <input {...register("discription")} placeholder="discription"/>
       <input {...register("price")} placeholder="price" />
       <input {...register("image")} placeholder="imageLink"/>
