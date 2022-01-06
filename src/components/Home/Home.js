@@ -85,7 +85,7 @@ const Home = () => {
       <Card>
         <Card.Img variant="top" src="https://i.ibb.co/GtcX3RG/cars.jpg" />
         <Card.Body>
-          <Card.Title>Cars</Card.Title>
+          <Card.Title>Cars<a href='#'>Cars</a></Card.Title>
         </Card.Body>
       </Card>
       </Col>
@@ -93,7 +93,7 @@ const Home = () => {
       <Card>
         <Card.Img variant="top" src="https://i.ibb.co/DLYQWjK/tempo-traveller.jpg" />
         <Card.Body>
-          <Card.Title>Mini Coach</Card.Title>
+          <Card.Title><a href='#'>Mini Coach</a></Card.Title>
         </Card.Body>
       </Card>
     </Col>
@@ -101,7 +101,7 @@ const Home = () => {
       <Card>
         <Card.Img variant="top" src="https://i.ibb.co/VHLSZMg/luxury-bus.jpg" />
         <Card.Body>
-          <Card.Title>Luxury Coach</Card.Title>
+          <Card.Title><a href='#'>Luxury Coach</a></Card.Title>
         </Card.Body>
       </Card>
     </Col>
@@ -114,7 +114,7 @@ const Home = () => {
       <Card>
         <Card.Img variant="top" src="https://i.ibb.co/8m5ZwpD/Luxury-Spa-Resorts-in-Himalayan-Range-300x169.jpg" />
         <Card.Body>
-          <Card.Title>Top 10 Spa Destinations in the Himalayan Range of India</Card.Title>
+          <Card.Title><a href='Top 10 Spa Destinations in the Himalayan Range of India'>Top 10 Spa Destinations in the Himalayan Range of India</a></Card.Title>
         </Card.Body>
       </Card>
       </Col>
@@ -122,7 +122,7 @@ const Home = () => {
       <Card>
         <Card.Img variant="top" src="https://i.ibb.co/wNkX94R/hotels-to-stay-in-sikkim-300x169.png" />
         <Card.Body>
-          <Card.Title>15 Hotels to Stay in Sikkim by Destinations</Card.Title>
+          <Card.Title><a href='#'>15 Hotels to Stay in Sikkim by Destinations</a></Card.Title>
         </Card.Body>
       </Card>
     </Col>
@@ -130,7 +130,7 @@ const Home = () => {
       <Card>
         <Card.Img variant="top" src="https://i.ibb.co/gZ3hbR2/Untitled-design-8-1-300x169.png" />
         <Card.Body>
-          <Card.Title>15 Best Honeymoon Resorts in Shimla</Card.Title>
+          <Card.Title><a href='#'>15 Best Honeymoon Resorts in Shimla</a></Card.Title>
         </Card.Body>
       </Card>
     </Col>
