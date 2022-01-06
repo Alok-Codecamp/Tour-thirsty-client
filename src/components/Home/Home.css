@@ -12,4 +12,10 @@
 }
 .hed{
     color: tomato;
+    background-color: aliceblue;
+}
+.transport{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }

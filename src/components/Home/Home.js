@@ -78,7 +78,7 @@ const Home = () => {
                 }
               </Row>
             </div>
-            <div className="hotels">
+            <div className="transport">
               <h2 className="hed">Recomanded TRANSPORT </h2>
     <Row xs={1} md={2} lg={3} className="g-4">
     <Col>
@@ -106,7 +106,8 @@ const Home = () => {
       </Card>
     </Col>
 </Row>
-      <div className="resort">
+</div>
+      <div className="transport">
         <h2 className="hed">Top class hotels and resorts</h2>
       <Row xs={1} md={2} lg={3} className="g-4">
     <Col>
@@ -136,7 +137,6 @@ const Home = () => {
 </Row>
 
       </div>
-        </div>
         </div>
     );
 };
