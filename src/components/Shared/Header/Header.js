@@ -10,7 +10,7 @@ const Header = () => {
         <div className='nav-container'>
             {/* nav bar start  */}
 
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="aliceblue" expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#">Tour thirsty</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
